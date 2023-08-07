@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./landing.module.css";
-import { useRef } from "react";
 import { gsap } from "gsap";
+import { motion } from "framer-motion";
+import { opacity } from "./textAnim";
 import {
   floating1,
   floating2,
@@ -16,6 +17,30 @@ import {
 } from "./data";
 
 const LandingSection = () => {
+  const [index, setIndex] = useState(0);
+  const words = [
+    "Passion",
+    "Acceleration",
+    "Thrill",
+    "Time",
+    "Speed",
+    "Rage",
+    "Focus",
+    "Power",
+    "Precision",
+    "Victory",
+    "Adrenaline",
+    "Championship",
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 1500);
+
+    return () => clearInterval(interval);
+  }, [index, words.length]);
+
   const plane1 = useRef(null);
   const plane2 = useRef(null);
   const plane3 = useRef(null);
@@ -86,7 +111,14 @@ const LandingSection = () => {
       </div>
       <div className={styles.title}>
         <h1>F1 Image Gallery & Blog</h1>
-        <p>Next.js and GSAP</p>
+        <motion.p
+          variants={opacity}
+          initial="inital"
+          enter="enter"
+          animate="enter"
+        >
+          {words[index]}
+        </motion.p>
       </div>
     </main>
   );
