@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.sliderContainer {
+  position: relative;
+  z-index: 111;
+  color: aliceblue;
+  overflow: hidden;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.slider {
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+  animation: slide 10s infinite linear;
+}
+
+.slider p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 5vw;
+  font-size: 240px;
+  font-weight: 500;
+  font-family: "Staatliches", cursive;
+}
