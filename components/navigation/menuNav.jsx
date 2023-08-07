@@ -11,16 +11,12 @@ const NavItems = [
     href: "/",
   },
   {
-    title: "Work",
-    href: "/work",
+    title: "Manifesto",
+    href: "/manifesto",
   },
   {
-    title: "About",
-    href: "/about",
-  },
-  {
-    title: "Contact",
-    href: "/contact",
+    title: "Blog",
+    href: "/blog",
   },
 ];
 

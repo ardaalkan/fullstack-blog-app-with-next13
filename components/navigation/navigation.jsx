@@ -1,10 +1,11 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Padding from "../layout/padding";
 import Link from "next/link";
 import styles from "./navigation.module.css";
 import SocialLinks from "../elements/social-link/social-link";
 import MenuNav from "./menuNav.jsx";
+import { AnimatePresence } from "framer-motion";
 
 const Navigation = () => {
   const [isActive, setIsActive] = useState(false);
@@ -40,7 +41,7 @@ const Navigation = () => {
           ></div>
         </div>
       </div>
-      {isActive && <MenuNav />}
+      <AnimatePresence mode="wait">{isActive && <MenuNav />}</AnimatePresence>
     </Padding>
   );
 };

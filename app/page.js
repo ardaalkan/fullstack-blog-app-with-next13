@@ -1,10 +1,10 @@
-import Image from 'next/image'
+import LandingSection from '@/components/landing/LandingSection'
 import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1>home</h1>
+    <main>
+      <LandingSection />
     </main>
   )
 }
