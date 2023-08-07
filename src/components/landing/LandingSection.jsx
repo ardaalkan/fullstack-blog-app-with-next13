@@ -14,7 +14,7 @@ import {
   floating6,
   floating7,
   floating8,
-} from "./data";
+} from "./data.js";
 
 const LandingSection = () => {
   const [index, setIndex] = useState(0);

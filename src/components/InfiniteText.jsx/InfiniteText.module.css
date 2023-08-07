@@ -7,6 +7,7 @@
   overflow: hidden;
   margin-top: 10vh;
   margin-bottom: 10vh;
+  font-family: "Staatliches", cursive;
 }
 
 .slider {
@@ -14,6 +15,7 @@
   white-space: nowrap;
   display: flex;
   animation: slide 10s infinite linear;
+  font-family: "Staatliches", cursive;
 }
 
 .slider p {

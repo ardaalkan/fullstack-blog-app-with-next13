@@ -1,6 +1,6 @@
-"use client"
-import React, {useRef, useEffect} from "react";
-import styles from "./InfiniteText.module.css"
+"use client";
+import React, { useRef, useEffect } from "react";
+import styles from "./InfiniteText.module.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 

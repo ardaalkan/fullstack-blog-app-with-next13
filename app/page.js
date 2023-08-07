@@ -1,12 +1,13 @@
-import LandingSection from "@/components/landing/LandingSection";
-import styles from "./page.module.css";
-import InfiniteText from "@/components/InfiniteText.jsx/InfiniteText";
+import LandingSection from "@/src/components/landing/LandingSection";
+import InfiniteText from "@/src/components/InfiniteText.jsx/InfiniteText";
+import LandingText from "@/src/components/LandingText/landingText";
 
 export default function Home() {
   return (
     <main>
       <LandingSection />
-      <InfiniteText/>
+      <InfiniteText />
+      <LandingText />
     </main>
   );
 }

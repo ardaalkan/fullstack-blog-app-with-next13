@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.textContainer {
+  padding: 15%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #333;
+  color: aliceblue;
+  font-size: 2vw;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: "Staatliches", cursive;
+}
+
+.textContainer span {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  font-size: 2vw;
+  letter-spacing: 2px;
+}
+
+.textContainer div::selection {
+  background-color: rgb(255, 136, 0);
+  color: #333;
+}
+
+.textContainer span::selection {
+  background-color: rgb(255, 136, 0);
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .textContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .textContainer span {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
