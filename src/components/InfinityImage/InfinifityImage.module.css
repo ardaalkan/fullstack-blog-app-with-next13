@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.carousel {
+  cursor: grab;
+  background-color: rgb(48, 48, 48);
+  font-family: "Staatliches", cursive;
+}
+
+.carousel h1 {
+    padding-left: 40px;
+    padding-top: 20px;
+    color: #ff5e00;
+    letter-spacing: 2px;
+    font-size: 3vw;
+}
+
+.item {
+  padding: 40px;
+}
+
+.item img {
+  height: 420px;
+  width: 450px;
+  pointer-events: none;
+}
+
+.item h2 {
+  color: #e95500;
+  font-size: 2vw;
+}
+
+.innerCarousel {
+  height: 600px;
+  display: flex;
+  background-color: rgb(48, 48, 48);
+}

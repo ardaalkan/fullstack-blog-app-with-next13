@@ -1,5 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
+"use client";
 import React from "react";
-import "./DetailTextStyle.css";
+import styles from "../maskingText/masking.module.css";
 import useMousePosition from "../../utils/useMousePosition";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -10,9 +12,9 @@ const MaskingText = () => {
   const size = isHovered ? 350 : 50;
 
   return (
-    <main className="main">
+    <main className={styles.main}>
       <motion.div
-        className="mask"
+        className={styles.mask}
         animate={{
           WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
           WebkitMaskSize: `${size}px`,
@@ -20,7 +22,7 @@ const MaskingText = () => {
         transition={{ type: "tween", ease: "backOut" }}
       >
         <p
-          className="mask-p"
+          className={styles.maskP}
           onMouseEnter={() => {
             setIsHovered(true);
           }}
@@ -33,20 +35,20 @@ const MaskingText = () => {
           calendar. Racing through the picturesque streets of Monaco, drivers
           must demonstrate precision and finesse while tackling hairpin turns
           and
-          <span className="mask-span">
+          <span className={styles.maskS}>
             high-speed chicanes, creating an awe-inspiring spectacle for
             spectators.
           </span>
         </p>
       </motion.div>
-      <motion.div className="body">
-        <p className="body-p">
+      <motion.div className={styles.body}>
+        <p>
           Overall, Formula 1 transcends being a mere sport; it embodies a blend
           of cutting-edge technology, human prowess, and thrilling drama. Its
           global popularity attests to its universal appeal, uniting racing
           enthusiasts and casual viewers alike in the excitement of witnessing
           extraordinary
-          <span className="body-span">
+          <span>
             {" "}
             feats of skill and bravery on the world's most prestigious racing
             circuits.
