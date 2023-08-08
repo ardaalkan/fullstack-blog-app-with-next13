@@ -22,11 +22,11 @@ const LandingText = () => {
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={textVariants}
-        transition={{ duration: 2.5 }}
+        transition={{ duration: 1.5 }}
       >
         <div>
           Formula 1 is a globally acclaimed motorsport competition that garners
-          immense interest. In these races, pilots engage in a fusion {" "}
+          immense interest. In these races, pilots engage in a fusion{" "}
           <span>speed </span>,&nbsp;technology, and{" "}
           <span>bravery, experiencing </span>
           adrenaline rushes at their peaks. Races held at Circuit de{" "}
