@@ -5,6 +5,8 @@ import styles from "./landing.module.css";
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import { opacity } from "./textAnim";
+// import imgAnimation from "./openAnim";
+
 import {
   floating1,
   floating2,
@@ -15,6 +17,42 @@ import {
   floating7,
   floating8,
 } from "./data.js";
+
+const imgAnimation = {
+  hiddenOne: {
+    clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
+  },
+  showOne: {
+    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    transition: {
+      delay: 2.5,
+      duration: 2.0,
+      ease: "easeInOut",
+    },
+  },
+  hiddenTwo: {
+    clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
+  },
+  showTwo: {
+    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    transition: {
+      delay: 2.2,
+      duration: 1.2,
+      ease: "easeInOut",
+    },
+  },
+  hiddenThree: {
+    clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
+  },
+  showThree: {
+    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    transition: {
+      delay: 2.7,
+      duration: 1.5,
+      ease: "easeInOut",
+    },
+  },
+};
 
 const LandingSection = () => {
   const [index, setIndex] = useState(0);
@@ -95,20 +133,38 @@ const LandingSection = () => {
       }}
       className={styles.main}
     >
-      <div ref={plane1} className={styles.plane}>
+      <motion.div
+        ref={plane1}
+        className={styles.plane}
+        variants={imgAnimation}
+        initial="hiddenOne"
+        animate="showOne"
+      >
         <Image alt="image" src={floating1} width={250} />
         <Image alt="image" src={floating2} width={250} />
         <Image alt="image" src={floating3} width={225} />
-      </div>
-      <div ref={plane2} className={styles.plane}>
+      </motion.div>
+      <motion.div
+        ref={plane2}
+        className={styles.plane}
+        variants={imgAnimation}
+        initial="hiddenTwo"
+        animate="showTwo"
+      >
         <Image alt="image" src={floating4} width={150} />
         <Image alt="image" src={floating5} width={200} />
         <Image alt="image" src={floating6} width={200} />
-      </div>
-      <div ref={plane3} className={styles.plane}>
+      </motion.div>
+      <motion.div
+        ref={plane3}
+        className={styles.plane}
+        variants={imgAnimation}
+        initial="hiddenThree"
+        animate="showThree"
+      >
         <Image alt="image" src={floating7} width={250} />
         <Image alt="image" src={floating8} width={300} />
-      </div>
+      </motion.div>
       <div className={styles.title}>
         <h1>F1 Image Gallery & Blog</h1>
         <motion.p

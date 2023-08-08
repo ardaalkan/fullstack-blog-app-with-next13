@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import LandingSection from "@/src/components/landing/LandingSection";
 import InfiniteText from "@/src/components/InfiniteText/InfiniteText";
