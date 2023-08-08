@@ -5,7 +5,6 @@ import styles from "./landing.module.css";
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import { opacity } from "./textAnim";
-// import imgAnimation from "./openAnim";
 
 import {
   floating1,
