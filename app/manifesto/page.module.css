@@ -1,3 +1,15 @@
+.main::selection,
+.gradient::selection,
+.mainText::selection,
+.descriptionText::selection,
+.hoverContainer::selection,
+.spanDescription::selection,
+.descriptionText .descriptionText_title::selection,
+.descriptionText .descriptionText_sub_title::selection {
+  background-color: #44444456;
+  color: #ffffffd5;
+}
+
 .main {
   background-color: rgb(0, 0, 0);
   height: auto;
@@ -11,18 +23,22 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 10vw;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
-  z-index: 10;
+  height: 15vw;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0));
+  z-index: 2;
 }
 
 .mainText {
   position: relative;
   font-size: 3vw;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
 }
 
 .mainText span {
+  text-decoration: underline;
+}
+
+.descriptionText span {
   text-decoration: underline;
 }
 
@@ -44,35 +60,35 @@
 .spanDescription {
   min-width: 285px;
   position: absolute;
-  background-color: rgba(44, 44, 44, 0.75);
+  background-color: rgba(44, 44, 44, 0.85);
   visibility: hidden;
   border-radius: 5px;
   padding: 25px;
   text-align: left;
-  z-index: 999;
-  color: white;
+  z-index: 1000;
   font-size: 14px;
   letter-spacing: 0.5px;
   top: -150%;
   left: 99%;
   border: 1px solid rgb(24, 24, 24);
-  color: #ebebebab;
   overflow: hidden;
   line-height: 25px;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s;
+  color: rgb(255, 255, 255);
 }
 
 .hoverContainer .spanDescription div:first-child {
   font-size: 20px;
-  color: #ebebeb8e;
+  color: #ebebebce;
 }
 
 .descriptionText .descriptionText_title {
   margin: 5%;
   font-size: 1.5vw;
   margin-left: 30%;
-  color: #8d8d8d;
+  margin-bottom: 15%;
+  color: #dddddd86;
   font-weight: 300;
   line-height: 40px;
 }

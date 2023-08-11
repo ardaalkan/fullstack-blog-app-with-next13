@@ -6,31 +6,41 @@ const Manifesto = () => {
     <>
       <div className={styles.main}>
         <div className={styles.mainText}>
-          Where ideas are sacred, is infinite and connection is cosmic. A future
-          where free expression expression is possible for every{" "}
+          F1 goes beyond merely speed. Each race provides a platform for teams
+          and drivers to express themselves freely. The designs of the racing
+          cars are brimming with{" "}
           <span className={styles.hoverContainer}>
-            curator&nbsp;
+            engineering{" "}
             <div className={styles.spanDescription}>
               <div>1.</div>
               <br />
-              If you have imagination
+              Technical design and innovation
               <br />
-              you are a curator.
+              in practical applications.
             </div>
-          </span>
-          in the universe.
+          </span>{" "}
+          marvels, each one a work of art.
         </div>
         <div className={styles.descriptionText}>
           <div className={styles.descriptionText_title}>
-            For every curator1 in the universe. 01. OUR INTERNET IS BROKEN The
-            year is 2023. There are 8 billion people on Earth. We live with the
-            world at our fingertips. We cling to a pocket-sized portal that
-            promises dreams of escape, but leaves us feeling empty.
-          </div>
-          <div className={styles.descriptionText_sub_title}>
-            The year is 2023. There are 8 billion people on Earth. We live with
-            the world at our fingertips. We cling to a pocket-sized portal that
-            promises dreams of escape, but leaves us feeling empty.
+            In the realm of F1, speed becomes art. Teams and drivers unite in
+            the pursuit of excellence, pushing the boundaries of engineering,
+            design, and human potential. A symphony of power, precision, and
+            strategy unfolds on the track, where every moment is a testament to
+            innovation. F1 isn't just a race; it's a celebration of human
+            ingenuity, where the road to victory is paved with dedication and
+            courage. Welcome to a world where{" "}
+            <span className={styles.hoverContainer}>
+              limits{" "}
+              <div className={styles.spanDescription}>
+                <div>2.</div>
+                <br />
+                Boundaries that define the
+                <br />
+                extent of possibilities.
+              </div>
+            </span>{" "}
+            are shattered and dreams accelerate.
           </div>
         </div>
       </div>
