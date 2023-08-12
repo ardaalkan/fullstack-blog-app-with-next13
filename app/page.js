@@ -9,22 +9,22 @@ import Preloader from "@/src/components/Preloader/Preloader";
 import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
-  // const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
-  // useEffect(() => {
-  //   (async () => {
-  //     setTimeout(() => {
-  //       setIsLoading(false);
-  //       document.body.style.cursor = "default";
-  //     }, 2000);
-  //   })();
-  // }, []);
+  useEffect(() => {
+    (async () => {
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = "default";
+      }, 2000);
+    })();
+  }, []);
 
   return (
     <main>
-      {/* <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
-      </AnimatePresence> */}
+      </AnimatePresence>
       <LandingSection />
       <InfiniteText />
       <LandingText />
@@ -32,4 +32,4 @@ export default function Home() {
       <InfinityImage />
     </main>
   );
-} 
+}

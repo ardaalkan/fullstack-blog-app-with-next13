@@ -1,10 +1,30 @@
+"use client";
 import React from "react";
 import styles from "./page.module.css";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Manifesto = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5, // Elementin yüzde 10'u ekrana girdiğinde çalıştır.
+  });
+
+  const textVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
   return (
     <>
-      <div className={styles.main}>
+      <motion.div
+        className={styles.main}
+        ref={ref}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={textVariants}
+        transition={{ duration: 1.5 }}
+      >
         <div className={styles.mainText}>
           F1 goes beyond merely speed. Each race provides a platform for teams
           and drivers to express themselves freely. The designs of the racing
@@ -43,7 +63,7 @@ const Manifesto = () => {
             are shattered and dreams accelerate.
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className={styles.gradient}></div>
     </>
   );
