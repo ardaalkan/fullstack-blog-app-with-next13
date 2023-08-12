@@ -42,7 +42,6 @@ const InfinityImage = () => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
 
-  console.log(images);
   return (
     <motion.div
       ref={ref}

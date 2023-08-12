@@ -12,7 +12,6 @@ const InfiniteText = () => {
   let direction = -1;
 
   useEffect(() => {
-    requestAnimationFrame(animation);
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(slider.current, {
@@ -21,9 +20,12 @@ const InfiniteText = () => {
         start: 0,
         end: window.innerHeight,
         scrub: true,
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         onUpdate: (e) => (direction = e.direction * -1),
       },
+      x: "-500px",
     });
+    requestAnimationFrame(animation);
   }, []);
 
   const animation = () => {
@@ -36,8 +38,8 @@ const InfiniteText = () => {
     gsap.set(firstText.current, { xPercent: xPercent });
     // eslint-disable-next-line no-dupe-keys
     gsap.set(secondText.current, { xPercent, xPercent });
-    xPercent += 0.05 * direction;
     requestAnimationFrame(animation);
+    xPercent += 0.05 * direction;
   };
 
   return (

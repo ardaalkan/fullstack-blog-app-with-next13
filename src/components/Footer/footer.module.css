@@ -56,6 +56,15 @@
   background-color: rgb(55, 55, 55);
 }
 
-.redText{
-  color: red;
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.socialIcons img:hover {
+  filter: brightness(1.2);
 }
