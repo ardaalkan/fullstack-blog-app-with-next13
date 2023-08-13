@@ -139,9 +139,27 @@ const LandingSection = () => {
         initial="hiddenOne"
         animate="showOne"
       >
-        <Image alt="image" src={floating1} width={250} />
-        <Image alt="image" src={floating2} width={250} />
-        <Image alt="image" src={floating3} width={225} />
+        <Image
+          alt="image"
+          src={floating1}
+          width={250}
+          data-scroll="true"
+          data-scroll-speed="0.1"
+        />
+        <Image
+          alt="image"
+          src={floating2}
+          width={250}
+          data-scroll="true"
+          data-scroll-speed="0.1"
+        />
+        <Image
+          alt="image"
+          src={floating3}
+          width={225}
+          data-scroll="true"
+          data-scroll-speed="0.1"
+        />
       </motion.div>
       <motion.div
         ref={plane2}
@@ -150,9 +168,27 @@ const LandingSection = () => {
         initial="hiddenTwo"
         animate="showTwo"
       >
-        <Image alt="image" src={floating4} width={150} />
-        <Image alt="image" src={floating5} width={200} />
-        <Image alt="image" src={floating6} width={200} />
+        <Image
+          alt="image"
+          src={floating4}
+          width={150}
+          data-scroll="true"
+          data-scroll-speed="0.1"
+        />
+        <Image
+          alt="image"
+          src={floating5}
+          width={200}
+          data-scroll="true"
+          data-scroll-speed="0.1"
+        />
+        <Image
+          alt="image"
+          src={floating6}
+          width={200}
+          data-scroll="true"
+          data-scroll-speed="0.1"
+        />
       </motion.div>
       <motion.div
         ref={plane3}
@@ -161,8 +197,20 @@ const LandingSection = () => {
         initial="hiddenThree"
         animate="showThree"
       >
-        <Image alt="image" src={floating7} width={250} />
-        <Image alt="image" src={floating8} width={300} />
+        <Image
+          alt="image"
+          src={floating7}
+          width={250}
+          data-scroll="true"
+          data-scroll-speed="0.2"
+        />
+        <Image
+          alt="image"
+          src={floating8}
+          width={300}
+          data-scroll="true"
+          data-scroll-speed="0.2"
+        />
       </motion.div>
       <div className={styles.title}>
         <h1>F1 Image Gallery & Blog</h1>
