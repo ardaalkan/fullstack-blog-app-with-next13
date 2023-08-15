@@ -7,11 +7,11 @@
 }
 
 .carousel h1 {
-    padding-left: 40px;
-    padding-top: 20px;
-    color: #ff5e00;
-    letter-spacing: 2px;
-    font-size: 3vw;
+  padding-left: 40px;
+  padding-top: 20px;
+  color: #ff5e00;
+  letter-spacing: 2px;
+  font-size: 3vw;
 }
 
 .item {
@@ -33,4 +33,30 @@
   height: 600px;
   display: flex;
   background-color: rgb(48, 48, 48);
+}
+
+@media (max-width: 650px) {
+  .carousel h1 {
+    font-size: 5vw;
+    padding: 20px;
+  }
+
+  .item {
+    padding: 20px;
+  }
+
+  .item img {
+    height: auto;
+    width: 100%;
+    min-height: 100px;
+    min-width: 110px;
+  }
+
+  .item h2 {
+    font-size: 4vw;
+  }
+
+  .innerCarousel {
+    height: auto;
+  }
 }

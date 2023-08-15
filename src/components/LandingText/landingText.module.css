@@ -32,9 +32,10 @@
 
 @media screen and (max-width: 768px) {
   .textContainer {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 15px;
+    padding: 10%;
   }
   .textContainer span {
     font-size: 15px;

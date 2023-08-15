@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./footer.module.css";
-import svgs from "@/src/utils/svgData";
+import svgs from "../../utils/svgData";
 import GsapMagnetic from "../GsapMagnetic/GsapMagnetic";
 // import Link from "next/link";
 

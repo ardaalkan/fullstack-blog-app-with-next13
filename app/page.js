@@ -1,11 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import LandingSection from "@/src/components/landing/LandingSection";
-import InfiniteText from "@/src/components/InfiniteText/InfiniteText";
-import LandingText from "@/src/components/LandingText/landingText";
-import MaskingText from "@/src/components/maskingText/maskingText";
-import InfinityImage from "@/src/components/InfinityImage/InfinityImage";
-import Preloader from "@/src/components/Preloader/Preloader";
+import LandingSection from "../src/components/landing/LandingSection";
+import InfiniteText from "../src/components/InfiniteText/InfiniteText";
+import LandingText from "../src/components/LandingText/landingText";
+import MaskingText from "../src/components/maskingText/maskingText";
+import InfinityImage from "../src/components/InfinityImage/InfinityImage";
+import Preloader from "../src/components/Preloader/Preloader";
 import { AnimatePresence } from "framer-motion";
 
 export default function Home() {

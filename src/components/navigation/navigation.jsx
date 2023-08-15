@@ -20,8 +20,10 @@ const Navigation = () => {
           <ul>
             <li>
               <Link href="/manifesto">Manifesto</Link>
+              <Link href="/manifesto">Manifesto</Link>
             </li>
             <li>
+              <Link href="/blog">Blog</Link>
               <Link href="/blog">Blog</Link>
             </li>
           </ul>

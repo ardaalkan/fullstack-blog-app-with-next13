@@ -24,7 +24,7 @@ const imgAnimation = {
   showOne: {
     clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
     transition: {
-      delay: 2.5,
+      delay: 2.0,
       duration: 2.0,
       ease: "easeInOut",
     },
@@ -35,7 +35,7 @@ const imgAnimation = {
   showTwo: {
     clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
     transition: {
-      delay: 2.2,
+      delay: 2.0,
       duration: 1.2,
       ease: "easeInOut",
     },
@@ -46,7 +46,7 @@ const imgAnimation = {
   showThree: {
     clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
     transition: {
-      delay: 2.7,
+      delay: 2.2,
       duration: 1.5,
       ease: "easeInOut",
     },
