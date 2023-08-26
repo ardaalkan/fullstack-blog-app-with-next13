@@ -9,6 +9,8 @@ const Page = () => {
     <Padding>
       <main className={styles.main}>
         <PostCard post={DUMMY_POSTS[0]} />
+        <PostCard post={DUMMY_POSTS[1]} />
+        <PostCard post={DUMMY_POSTS[2]} />
       </main>
     </Padding>
   );
